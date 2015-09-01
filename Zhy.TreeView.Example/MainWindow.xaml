@@ -1,0 +1,49 @@
+﻿<Window x:Class="Zhy.TreeView.Example.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TreeView Name="tv">
+            <TreeViewItem  IsExpanded="True">
+                <TreeViewItem.Header>
+                    <CheckBox Content="root" Click="chx_Click"></CheckBox>
+                </TreeViewItem.Header>
+                <TreeViewItem IsExpanded="True">
+                    <TreeViewItem.Header>
+                        <CheckBox Content="aa" Click="chx_Click"></CheckBox>
+                    </TreeViewItem.Header>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <CheckBox Content="aaa1" Click="chx_Click"></CheckBox>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <CheckBox Content="aaa2" Click="chx_Click"></CheckBox>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <CheckBox Content="aaa3" Click="chx_Click"></CheckBox>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="bb" Click="chx_Click"></CheckBox>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem IsExpanded="True">
+                    <TreeViewItem.Header>
+                        <CheckBox Content="cc" Click="chx_Click"></CheckBox>
+                    </TreeViewItem.Header>
+                    <TreeViewItem>
+                        <TreeViewItem.Header>
+                            <CheckBox Content="ccc" Click="chx_Click"></CheckBox>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+    </Grid>
+</Window>
